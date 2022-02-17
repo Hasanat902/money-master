@@ -1,5 +1,38 @@
 /* main section image css */
 .money-img{
-    width: 605px;
+    width: 705px;
     height: 600px;
+}
+
+/* main section form css start */
+.heading{
+    margin: 15px 0;
+    font-size: 22px;
+}
+.input-field{
+    border: none;
+    background: #DCDCDC;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+.input-heading{
+    font-weight: bold;
+}
+.calc-btn{
+    padding: 5px 35px;
+    border: none;
+    font-weight: bold;
+    background: #59A5FF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.save-btn{
+    padding: 5px 35px;
+    border: none;
+    font-weight: bold;
+    background: #59A5FF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-left: 10px;
 }
