@@ -18,7 +18,7 @@ document.getElementById("calc-button").addEventListener("click", function(){
         const totalExpenses = document.getElementById("total-expenses");
         totalExpenses.innerText = totalCosts;
 
-        // // balance calculate
+        // balance calculate
         const totalBalance = document.getElementById("total-balance");
         
         const newBalance = parseInt(totalIncome) - totalCosts;
@@ -26,3 +26,25 @@ document.getElementById("calc-button").addEventListener("click", function(){
     }
     
 });
+
+// saving amount and remaining balance calculation
+
+document.getElementById("save-button").addEventListener("click", function(){
+    
+    const percentage = document.getElementById("percentage").value;
+    const totalIncome = document.getElementById("total-income").value;
+    const saveAmount = (parseInt(percentage) / 100) * parseInt(totalIncome);
+    const totalBalance = document.getElementById("total-balance").innerText;
+    if(totalBalance < saveAmount ){
+        alert("You dont have enough money for saving");
+    }
+    else{
+        const savingAmount = document.getElementById("save-amount");
+        savingAmount.innerText = saveAmount;
+
+        const remainingBalance = document.getElementById("remaining-balance");
+
+        const totalRemainingBalance = totalBalance - saveAmount;
+        remainingBalance.innerText = totalRemainingBalance;
+    }
+})
